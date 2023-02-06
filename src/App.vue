@@ -13,8 +13,15 @@ export default {
 </script>
 
 <template>
-  <ColorPickerGame v-if="currentLesson === 'color-picker-game'" />
-  <Recap_01_02_2023 v-else />
+  <div>
+    <ColorPickerGame />
+    <!-- <Recap_01_02_2023 /> -->
+  </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.total {
+  display: flex;
+  flex-direction: column;
+}
+</style>
